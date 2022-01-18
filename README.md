@@ -16,7 +16,7 @@ After completing this exercise you will know how to:
 
 ## Steps
 
-1. What is JSON data?
+1. Learn about JSON data. What is it and how to read it from an API
 
    > JSON data is similar to objects with a key in quotes and the value after the colon
 
@@ -34,7 +34,11 @@ After completing this exercise you will know how to:
    }
    ```
 
-   - Read JSON data from the chuck norris api web site
+   - Read JSON data from the API
+
+   [https://api.chucknorris.io/jokes/random](https://api.chucknorris.io/jokes/random)
+
+   - Read JSON data from the chuck norris api web site using javascript
 
    ```javascript
    const getJson = async (url) => {
@@ -42,9 +46,13 @@ After completing this exercise you will know how to:
      const respJson = await resp.json();
      return respJson;
    };
+
+   url = "https://api.chucknorris.io/jokes/random";
+
+   console.log(getJson(url));
    ```
 
-> This block quote is here for your information.
+<!-- > This block quote is here for your information.
 
 - [hudektech](https://hudektech.com)
 - nested item one
@@ -74,4 +82,4 @@ def add(num1, num2):
 | --------------- | --------------------- | ---------- |
 | John Doe        | john@email.com        | Taipei, TW |
 | me              | me@gmail.com          | Austin, Tx |
-| Mark Rutherford | mrutherford@gmail.com | Austin, Tx |
+| Mark Rutherford | mrutherford@gmail.com | Austin, Tx | -->
