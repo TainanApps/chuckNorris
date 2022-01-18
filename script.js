@@ -16,7 +16,6 @@ const getJson = async (url) => {
 // Get categories
 const loadCategories = async () => {
   respJson = await getJson(chuckCategories);
-  console.log(respJson);
 
   let dropDown = document.querySelector("#joke-category");
   dropDown.options.innerHTML = "";
