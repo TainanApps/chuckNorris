@@ -4,7 +4,7 @@
 
 img {
   /* border: 20px solid yellow; */
-  width: 300px;
+  width: 275px;
   clip-path: inset(0px 10px 10px 10px);
 
   /* clip-path: rect(50px, 50px, 50px, 50px); */
