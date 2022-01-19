@@ -43,6 +43,7 @@ body {
   margin: 20px 20px;
   border-width: 2px;
   border-style: outset;
+  cursor: pointer;
 }
 
 .btn-get {
@@ -57,7 +58,6 @@ body {
 .joke-container {
   height: 30vh;
 }
-
 
 p {
   background-color: white;
