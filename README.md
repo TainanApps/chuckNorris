@@ -14,49 +14,110 @@ After completing this exercise you will know how to:
 
 ---
 
-## Steps
+## Concepts
 
-1. Learn about JSON data. What is it and how to read it from an API
+### User Snippets
 
-   > JSON data is similar to objects with a key in quotes and the value after the colon
+```
+  "function1": {
+    "prefix": "fn1",
+    "body": ["const $1 = ($2) => { $3 }"],
+    "description": "arrow function statement"
+  },
+  "function2": {
+    "prefix": "fn2",
+    "body": ["($1) => { $2 }"],
+    "description": "arrow function"
+  },
+    "querySel1": {
+    "prefix": "q1",
+    "body": ["document.querySelector($1)"],
+    "description": "arrow function statement"
+  },
+  "querySel2": {
+    "prefix": "q2",
+    "body": ["document.querySelectorAll($1)"],
+    "description": "arrow function statement"
+  },
+```
 
-   - Example JSON data
+### CSS
 
-   ```json
-   {
-     "categories": [],
-     "created_at": "2020-01-05 13:42:23.240175",
-     "icon_url": "https://assets.chucknorris.host/img/avatar/chuck-norris.png",
-     "id": "OlsdMIudTsOfAaii3NcXvQ",
-     "updated_at": "2020-01-05 13:42:23.240175",
-     "url": "https://api.chucknorris.io/jokes/OlsdMIudTsOfAaii3NcXvQ",
-     "value": "Chuck Norris skipped recess in school, becuse he don't play"
-   }
-   ```
+- Reference class by .
+- Reference id by #
+- Reference element by element name
 
-   - Read JSON data from the API
+```
+.btn-get {
+  background: navy;
+  color: white;
+}
 
-   [https://api.chucknorris.io/jokes/random](https://api.chucknorris.io/jokes/random)
+#my-id {
+  color: green;
+}
 
-   - Read JSON data from the chuck norris api web site using javascript
+h1 {
+  text-shadow: 1px 1px 2px grey;
+}
 
-   ```javascript
-   const getJson = async (url) => {
-     const resp = await fetch(url);
-     const respJson = await resp.json();
-     return respJson;
-   };
+```
 
-   url = "https://api.chucknorris.io/jokes/random";
+### JSON data and reading it using Javascript
 
-   console.log(getJson(url));
-   ```
+> JSON data is similar to objects with a key in quotes and the value after the colon
 
-<!-- > This block quote is here for your information.
+- Example JSON data
 
-- [hudektech](https://hudektech.com)
-- nested item one
-- nested item two
+```json
+{
+  "categories": [],
+  "created_at": "2020-01-05 13:42:23.240175",
+  "icon_url": "https://assets.chucknorris.host/img/avatar/chuck-norris.png",
+  "id": "OlsdMIudTsOfAaii3NcXvQ",
+  "updated_at": "2020-01-05 13:42:23.240175",
+  "url": "https://api.chucknorris.io/jokes/OlsdMIudTsOfAaii3NcXvQ",
+  "value": "Chuck Norris skipped recess in school, becuse he don't play"
+}
+```
+
+- Read JSON data from the API
+
+  [https://api.chucknorris.io/jokes/random](https://api.chucknorris.io/jokes/random)
+
+- Read JSON data from the chuck norris api web site using javascript
+
+```javascript
+const getJson = async (url) => {
+  const resp = await fetch(url);
+  const respJson = await resp.json();
+  return respJson;
+};
+
+url = "https://api.chucknorris.io/jokes/random";
+
+console.log(getJson(url));
+```
+
+#### Javascript
+
+- Event listeners, reference HTML element by id using #, class using ., and element using it's name
+- Event listener references a function which is called when the event is triggered ('click')
+
+  ```
+  const btnGetJoke = document.querySelector("#joke-get");
+
+  btnGetJoke.addEventListener("click", getNextJoke);
+
+
+
+  ```
+
+  <!-- > This block quote is here for your information.
+
+* [hudektech](https://hudektech.com)
+* nested item one
+* nested item two
 
 1. item one
 2. item two
@@ -79,7 +140,7 @@ def add(num1, num2):
 ```
 
 | Name            | Email                 | City       |
-| --------------- | --------------------- | ---------- |
+| --------------- | --------------------- | ---------- | --- |
 | John Doe        | john@email.com        | Taipei, TW |
 | me              | me@gmail.com          | Austin, Tx |
-| Mark Rutherford | mrutherford@gmail.com | Austin, Tx | -->
+| Mark Rutherford | mrutherford@gmail.com | Austin, Tx | --> |
