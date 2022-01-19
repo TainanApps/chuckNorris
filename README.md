@@ -18,7 +18,7 @@ After completing this exercise you will know how to:
 
 ### User Snippets
 
-```
+```javascript
   "function1": {
     "prefix": "fn1",
     "body": ["const $1 = ($2) => { $3 }"],
@@ -47,7 +47,7 @@ After completing this exercise you will know how to:
 - Reference id by #
 - Reference element by element name
 
-```
+```css
 .btn-get {
   background: navy;
   color: white;
@@ -60,7 +60,6 @@ After completing this exercise you will know how to:
 h1 {
   text-shadow: 1px 1px 2px grey;
 }
-
 ```
 
 ### JSON data and reading it using Javascript
@@ -104,14 +103,11 @@ console.log(getJson(url));
 - Event listeners, reference HTML element by id using #, class using ., and element using it's name
 - Event listener references a function which is called when the event is triggered ('click')
 
-  ```
-  const btnGetJoke = document.querySelector("#joke-get");
+```javascript
+const btnGetJoke = document.querySelector("#joke-get");
 
-  btnGetJoke.addEventListener("click", getNextJoke);
-
-
-
-  ```
+btnGetJoke.addEventListener("click", getNextJoke);
+```
 
   <!-- > This block quote is here for your information.
 
@@ -143,4 +139,4 @@ def add(num1, num2):
 | --------------- | --------------------- | ---------- | --- |
 | John Doe        | john@email.com        | Taipei, TW |
 | me              | me@gmail.com          | Austin, Tx |
-| Mark Rutherford | mrutherford@gmail.com | Austin, Tx | --> |
+| Mark Rutherford | mrutherford@gmail.com | Austin, Tx | -->
