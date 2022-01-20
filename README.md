@@ -6,6 +6,8 @@
 
 Create a website that reads the Chuck Norris API and displays the jokes to the screen.
 
+https://hudektech.github.io/chuckNorris/
+
 After completing this exercise you will know how to:
 
 ### Javascript
