@@ -1,16 +1,31 @@
-# Chuck Norris Joke API exercise
+# Chuck Norris Joke API 
 
 ![chuck norris cool pic](https://images02.military.com/sites/default/files/2021-04/chucknorris.jpeg)
+
+## Objectives
 
 Create a website that reads the Chuck Norris API and displays the jokes to the screen.
 
 After completing this exercise you will know how to:
 
-- Work with `json` data
-- Call an external website endpoint to read their json data
-- Understand how to use the async `fetch ` function
-- Use dropdowns and read their values
-- Automatically fill dropdown lists
+### Javascript
+- Work with `json` data 
+- Call an API (application program interface) and read it's data
+- Understand how to interact with web sites asynchronously using async `fetch ` function
+- Read dropdown selections and their values
+- Automatically fill dropdown lists in HTML using Javascript
+
+### HTML
+- Create dropdown lists
+- Add images
+
+### CSS
+- Use Flexbox styling to format elements
+- Style buttons
+### Integration 
+- Understand relationship between Javascript (JS), HTML, and CSS
+- Explain this relationship
+  - JS-> HTML <-CSS
 
 ---
 
